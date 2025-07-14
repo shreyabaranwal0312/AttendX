@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -459,5 +455,56 @@ body {
     
     .advantage-item {
         padding: 1rem;
+    }
+}
+.logo-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+    /* Removed background and padding */
+}
+
+/* Update the existing logo styles to work with image */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+
+/* Alternative larger logo size if needed */
+.logo-image-large {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .logo-image {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+        gap: 10px;
     }
 }
